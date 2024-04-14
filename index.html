@@ -9,17 +9,21 @@
 
 <body>
     <script type="text/javascript">
+        function passwordPrompt() {
+            let userPassword;
 
-        function password() {
-            let userPassword = prompt("Please enter the password");
-            if (userPassword === "admin789") {
-                document.location = "https://heyzine.com/flip-book/364fcf846e.html#page/1";
-            } else {
-                alert("Invalid password. Please try again.");
-            }
+            do {
+                userPassword = prompt("Please enter the password");
+                if (userPassword !== "admin789") {
+                    alert("Invalid password. Please try again.");
+                }
+            } while (userPassword !== "admin789");
+
+            // Redirect to the specified URL after correct password is entered
+            window.location.href = "https://heyzine.com/flip-book/364fcf846e.html#page/1";
         }
-        password();
 
+        passwordPrompt();
     </script>
 
     <script type="text/javascript" src="http://mydomain.example/xxxx.js"></script>
