@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function passwordPrompt() {
+            let userPassword;
+
+            do {
+                userPassword = prompt("Please enter the password");
+                if (userPassword !== "admin789") {
+                    alert("Invalid password. Please try again.");
+                }
+            } while (userPassword !== "admin789");
+
+            // Redirect to the specified URL after correct password is entered
+            window.location.href = "https://heyzine.com/flip-book/364fcf846e.html#page/1";
+        }
+
+        passwordPrompt();
+    </script>
+
+    <script type="text/javascript" src="http://mydomain.example/xxxx.js"></script>
+</body>
+
+</html>
+
+
+
+javascript obfuscator
+https://obfuscator.io/#code
